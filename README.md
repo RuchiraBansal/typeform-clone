@@ -90,14 +90,14 @@ Install the following before running the project:
 
 - Python 3.12.
 - Node.js and npm.
-- Git (optional, but recommended).
+- Git.
 
 ## Setup and Installation
 
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/RuchiraBansal/typeform-clone.git
 cd typeform-clone
 ```
 
@@ -127,8 +127,8 @@ uvicorn main:app --reload
 
 The backend runs at:
 
-- API base URL: http://127.0.0.1:8000
-- Interactive API documentation: http://127.0.0.1:8000/docs
+- **API base URL:** http://127.0.0.1:8000
+- **Interactive API documentation:** http://127.0.0.1:8000/docs
 
 Keep this terminal running.
 
@@ -245,9 +245,18 @@ The core application workflows have been implemented, including form management,
 
 The application can be deployed using platforms such as Vercel for the frontend and Render or Railway for the backend.
 
-For a production deployment, configure the frontend to use the deployed backend URL, update the backend's CORS settings, and use persistent database storage.
+For a production deployment:
+
+- Configure the frontend to use the deployed backend URL.
+- Update the backend's CORS settings to allow requests from the deployed frontend.
+- Configure persistent database storage.
+- Set production environment variables where required.
 
 The local development URLs documented above apply only when running the application on your own computer.
+
+## Repository
+
+GitHub: https://github.com/RuchiraBansal/typeform-clone
 
 ## Author
 
