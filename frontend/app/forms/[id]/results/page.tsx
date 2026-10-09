@@ -4,7 +4,9 @@
 import Link from "next/link";
 import { use, useCallback, useEffect, useState } from "react";
 
-const API = "http://127.0.0.1:8000";
+
+const API_URL = "https://typeform-clone-1-38gy.onrender.com";
+
 
 type ResponseItem = {
   id: number;
