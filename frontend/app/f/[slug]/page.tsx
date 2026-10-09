@@ -4,8 +4,8 @@
 import { use, useCallback, useEffect, useState } from "react";
 
 
-const API_URL = "https://typeform-clone-1-38gy.onrender.com";
-
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 type Question = {
   id: number;

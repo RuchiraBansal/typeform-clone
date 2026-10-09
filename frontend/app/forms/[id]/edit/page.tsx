@@ -25,8 +25,8 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 
 
-const API_URL = "https://typeform-clone-1-38gy.onrender.com";
-
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 const questionTypes = [
   { value: "short_text", label: "Short text" },
